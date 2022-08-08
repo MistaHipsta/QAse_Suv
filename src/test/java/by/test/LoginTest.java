@@ -15,14 +15,13 @@ import static org.openqa.selenium.By.id;
 public class LoginTest {
 
     @Test
-    public void firstTest() {
+    public void loginTest() {
         ScreenShooter.captureSuccessfulTests = true;
         new LoginPage()
                 .open()
                 .login();
 
         $(id("createButton")).shouldHave(text("Create new project"));
-
         assertThat($(id("createButton"))
                 .getText())
                 .isNotNull()

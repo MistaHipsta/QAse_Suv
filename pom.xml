@@ -21,7 +21,7 @@
         <log4j.version>2.18.0</log4j.version>
         <jackson.dataformat.version>2.13.3</jackson.dataformat.version>
         <lombok.version>1.18.24</lombok.version>
-        <selenide.version>6.6.6</selenide.version>
+        <selenide.version>5.2.8</selenide.version>
         <assertj-core.version>3.23.1</assertj-core.version>
     </properties>
 
@@ -62,12 +62,6 @@
             <version>${lombok.version}</version>
             <scope>provided</scope>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/com.codeborne/selenide -->
-        <dependency>
-            <groupId>com.codeborne</groupId>
-            <artifactId>selenide</artifactId>
-            <version>${selenide.version}</version>
-        </dependency>
         <!-- https://mvnrepository.com/artifact/org.assertj/assertj-core -->
         <dependency>
             <groupId>org.assertj</groupId>
@@ -78,13 +72,7 @@
         <dependency>
             <groupId>com.codeborne</groupId>
             <artifactId>selenide</artifactId>
-            <version>6.0.3</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.codeborne</groupId>
-            <artifactId>selenide</artifactId>
-            <version>5.2.8</version>
+            <version>${selenide.version}</version>
         </dependency>
 
 
